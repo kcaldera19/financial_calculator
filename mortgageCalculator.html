@@ -34,22 +34,33 @@
         </div>
     </nav>
 
-    
+
     <div>
-        Principal (loan amount): <input type="text" id="principalAmount">
+        <label for="principalAmount">Principal (loan amount): $</label>
+        <input type="number" id="principalAmount">
     </div>
     <div>
-        interest Rate: <input type="text" id="interest">
+        <label for="monthlyInterestRate">Monthly interest Rate:</label>
+        <input type="number" id="monthlyInterestRate">
     </div>
     <div>
-        Length of Loan: <input type="text" id="loanLength">
+        <label for="loanLength">Length of Loan in Months: </label>
+        <input type="text" id="loanLength">
     </div>
+
+    <div>
+        <button type="button" class="btn btn-primary btn-sm">
+            <input type="text" id="answerField" readonly>
+        </button>
+        <p>Monthly Payment</p>
+
+    </div>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
     <script src="scripts/mortgageCal.js"></script>
 
 </body>
