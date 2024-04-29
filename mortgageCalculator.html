@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">Calculator</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,33 +36,31 @@
 
 
     <div>
-        <label for="principalAmount">Principal (loan amount): $</label>
-        <input type="number" id="principalAmount">
+        <label for="loanAmount">Principal (loan amount): $</label>
+        <input type="number" id="loanAmount">
     </div>
     <div>
-        <label for="monthlyInterestRate">Monthly interest Rate:</label>
-        <input type="number" id="monthlyInterestRate">
+        <label for="annualnterestRate">Monthly interest Rate:%</label>
+        <input type="number" id="annualnterestRate">
     </div>
     <div>
-        <label for="loanLength">Length of Loan in Months: </label>
-        <input type="text" id="loanLength">
+        <label for="loanLength">Length of Loan in years: </label>
+        <input type="number" id="loanLength">
     </div>
 
     <div>
-        <button type="button" class="btn btn-primary btn-sm">
-            <input type="text" id="answerField" readonly>
-        </button>
+        <button type="button" class="btn btn-primary btn-sm" onclick="monthlyMorgagePayment()">Calculate</button>
+        
         <p>Monthly Payment</p>
 
     </div>
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    
     <script src="scripts/mortgageCal.js"></script>
-
 </body>
 
 </html>
