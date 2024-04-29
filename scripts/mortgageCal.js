@@ -2,16 +2,17 @@
 
 window.onload = monthlyMorgagePayment;
 function monthlyMorgagePayment() {
-    const loanAmountField = parseFloat(document.querySelector("#loanAmount").value);
-    const annualInterestRateValue = parseFloat(document.querySelector("#annualnterestRate").value);
-    const loanLengthField = parseFloat(document.querySelector("#loanLength").value);
+    let loanAmountField = parseFloat(document.querySelector("#loanAmount").value);
+    let annualInterestRateValue = parseFloat(document.querySelector("#annualnterestRate").value);
+    let loanLengthField = parseFloat(document.querySelector("#loanLength").value);
 
     // converting annual interest rate to monthly by 12 * 100
-    const monthlyInterestRate = annualInterestRateValue / 1200;
-    const numberfPayments = loanLengthField * 12;
+    let monthlyInterestRate = annualInterestRateValue / 12/100;
+    let numberfPayments = loanLengthField * 12;
 
-    const monthlyPayment = (loanAmountField * monthlyInterestRate) / (1 - Math.pow(1 + monthlyInterestRate, -numberfPayments));
+    let monthlyPayment = (loanAmountField * monthlyInterestRate) / (1 - Math.pow(1 + monthlyInterestRate, -numberfPayments));
 
-    const total= `The monthly payment will be:$${monthlyPayment.toFixed(2)}`;
+    let total= `The monthly payment will be:$${monthlyPayment.toFixed(2)}`;
     document.querySelector("#payment").innerHTML = total;
 }
+ 
