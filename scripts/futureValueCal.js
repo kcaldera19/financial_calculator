@@ -20,10 +20,10 @@ function calcFutureValue(event){
 
 
     // futureValue = desposit * (1 + interestRate/100) ** years;
-    const futureValue = deposit * (1 + interestRate) ** years;
+    const futureValue = deposit * (1 + interestRate/100) ** years;
     const interestEarned = futureValue - deposit;
 
     let resultDiv = document.querySelector("#results");
 
-    resultsDiv.innerHTML=` If you deposit $${deposit} in a cd that earns ${interestRate} `
+    resultDiv.innerHTML=` If you deposit $${deposit} in a cd that earns ${interestRate} %interest and increase in ${years} years, your CD's will have a balance of $${futureValue.toFixed(2)} and you would have earned $${interestEarned.toFixed(2)} in interest} `
 }

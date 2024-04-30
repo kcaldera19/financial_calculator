@@ -37,9 +37,9 @@
 
     <section class="w-50 mx-auto">
         <h1 class="my-3 text-center">Future Value Calculator</h1>
-        <!-- form -->
+          <!-- form -->
 
-        <form id="futureValueform">
+        <form id="futureValueForm">
             <div class="my-3">
                 <label for="deposit">Deposit</label>
                 <input type="number" class="form-control" id="deposit">
@@ -49,7 +49,7 @@
 
             <div class="my-3">
                 <!-- what the user sees -->
-                <label for="interestRate">InterestRate</label>
+                <label for="interestRate">Interest Rate</label>
                 <!-- allows you to change the whole number to a percent -->
                 <input type="number" step=".001" class="form-control" id="interestRate">
             </div>
@@ -62,18 +62,13 @@
                 <input type="number" class="form-control" id="years">
             </div>
 
-
+            <div id="results" class="my-3"></div>
 
             <!-- button is automatic a submit form -->
             <button class="btn btn-primary" type="submit">Calculate Future Value</button>
             <button type="button" id="resetForm" class="btn btn-success">Reset Form</button>
 
-
-
         </form>
-
-
-
 
     </section>
 
